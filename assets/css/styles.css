@@ -1,0 +1,364 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font: normal 16px sans-serif;
+	color: #555;
+}
+
+ul,
+nav {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+
+	opacity: 0.9;
+}
+
+a:hover {
+	opacity: 1;
+}
+
+a.btn {
+	border-radius: 4px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	background-color: #3f51b5;
+	text-align: center;
+	opacity: 1;
+}
+
+hr {
+	width: 150px;
+	height: 2px;
+	background-color: #4f9129;
+	border: 0;
+	margin-bottom: 80px;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 125px 100px;
+}
+
+@media (max-width: 1000px) {
+	section {
+		padding: 100px 50px;
+	}
+}
+
+@media (max-width: 600px) {
+	section {
+		padding: 80px 30px;
+	}
+}
+
+section h3.title {
+	color: #414a4f;
+	text-transform: capitalize;
+	font: bold 32px "Open Sans", sans-serif;
+	margin-bottom: 35px;
+	text-align: center;
+}
+
+section p {
+	max-width: 800px;
+	text-align: center;
+	margin-bottom: 35px;
+	padding: 0 20px;
+	line-height: 2;
+}
+
+ul.grid {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+/*-------------
+ 	Header
+-------------*/
+
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	padding: 35px 100px 0;
+	animation: 1s fadein 0.5s forwards;
+	opacity: 0;
+}
+
+@keyframes fadein {
+	100% {
+		opacity: 1;
+	}
+}
+
+header h2 {
+	font-family: "Quicksand", sans-serif;
+}
+
+header nav {
+	display: flex;
+	/* margin-right: -15px; */
+}
+
+header nav li {
+	margin: 0 15px;
+}
+
+header img {
+	height: 120px;
+	width: 120px;
+}
+
+header nav li:first-child {
+	margin-left: 0;
+}
+
+header nav li:last-child {
+	margin-right: 0;
+}
+
+@media (max-width: 1000px) {
+	header {
+		padding: 20px 50px;
+	}
+}
+
+@media (max-width: 700px) {
+	header {
+		flex-direction: column;
+	}
+
+	header h2 {
+		margin-bottom: 15px;
+	}
+}
+
+.about {
+	position: relative;
+	justify-content: center;
+
+	color: #fff;
+	text-align: center;
+}
+
+.about-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-color: #2196f3;
+	z-index: -1;
+}
+
+/*----------------
+ 	Hero Section
+----------------*/
+
+.hero {
+	position: relative;
+	justify-content: center;
+	min-height: 100vh;
+	color: #fff;
+	text-align: center;
+}
+
+.hero .background-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-color: #4f9129;
+	z-index: -1;
+}
+
+.hero h1 {
+	font: bold 60px "Open Sans", sans-serif;
+	margin-bottom: 15px;
+}
+
+.hero h3 {
+	font: normal 28px "Open Sans", sans-serif;
+	margin-bottom: 40px;
+}
+
+.hero a.btn {
+	padding: 20px 46px;
+}
+
+.hero-content-area {
+	opacity: 0;
+	margin-top: 100px;
+	animation: 1s slidefade 1s forwards;
+}
+
+@keyframes slidefade {
+	100% {
+		opacity: 1;
+		margin: 0;
+	}
+}
+
+@media (max-width: 800px) {
+	.hero {
+		min-height: 600px;
+	}
+
+	.hero h1 {
+		font-size: 48px;
+	}
+
+	.hero h3 {
+		font-size: 24px;
+	}
+
+	.hero a.btn {
+		padding: 15px 40px;
+	}
+}
+
+/*features*/
+
+.features {
+	background-color: #f7f7f7;
+}
+
+.features .grid li {
+	padding: 0 30px;
+	flex-basis: 33%;
+	text-align: center;
+}
+
+.features .grid li i {
+	font-size: 50px;
+	color: #2196f3;
+	margin-bottom: 25px;
+}
+
+.features .grid li h4 {
+	color: #555;
+	font-size: 20px;
+	margin-bottom: 25px;
+}
+
+.features .grid li p {
+	margin: 0;
+}
+
+.features h1 {
+	font: bold 35px "Open Sans", sans-serif;
+	margin-bottom: 65px;
+}
+
+@media (max-width: 1000px) {
+	.features .grid li {
+		flex-basis: 70%;
+		margin-bottom: 65px;
+	}
+
+	.features .grid li:last-child {
+		margin-bottom: 0;
+	}
+}
+
+@media (max-width: 600px) {
+	.features .grid li {
+		flex-basis: 100%;
+	}
+}
+
+/*---------------------------game info  original template with lists--------------------------------------------*/
+/* ul {
+	list-style-type: square;
+}
+
+.groups {
+	list-style-type: lower-alpha;
+}
+
+.recreation {
+	list-style-type: lower-alpha;
+}
+
+.coach {
+	list-style-type: circle;
+} */
+/*---------------------------------------------------game info with accordion----------------------------------*/
+.tab {
+	position: relative;
+	margin: 2px;
+	max-width: 600px;
+}
+
+/* [THE LABEL] */
+.tab input {
+	display: none;
+}
+
+.tab label {
+	display: block;
+	background: #87aa73;
+	color: #fff;
+	font-weight: bold;
+	padding: 10px;
+	cursor: pointer;
+	border-radius: 25px;
+}
+
+.tab label::after {
+	content: "\25b6";
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	display: block;
+	transition: all 0.4s;
+}
+
+.tab input[type="checkbox"]:checked+label::after,
+.tab input[type="radio"]:checked+label::after {
+	transform: rotate(90deg);
+}
+
+/* [THE CONTENTS] */
+.tab-content {
+	overflow: hidden;
+	background: #f7f7f7;
+	/* CSS animation will not work with auto height */
+	/* This is why we use max-height */
+	transition: max-height 0.4s;
+	max-height: 0;
+}
+
+.tab-content p {
+	margin: 20px;
+}
+
+.tab input:checked~.tab-content {
+	/* Set the max-height to a large number */
+	/* Or 100% viewport height */
+	max-height: 100vh;
+}

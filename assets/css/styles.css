@@ -306,15 +306,16 @@ header nav li:last-child {
 
 .coach {
 	list-style-type: circle;
-} */
-/*---------------------------------------------------game info with accordion----------------------------------*/
+}
+ */
+/*---------------------------------------------------rules with accordion----------------------------------*/
 .tab {
 	position: relative;
 	margin: 2px;
 	max-width: 600px;
 }
 
-/* [THE LABEL] */
+
 .tab input {
 	display: none;
 }
@@ -343,12 +344,11 @@ header nav li:last-child {
 	transform: rotate(90deg);
 }
 
-/* [THE CONTENTS] */
+
 .tab-content {
 	overflow: hidden;
 	background: #f7f7f7;
-	/* CSS animation will not work with auto height */
-	/* This is why we use max-height */
+
 	transition: max-height 0.4s;
 	max-height: 0;
 }
@@ -358,7 +358,191 @@ header nav li:last-child {
 }
 
 .tab input:checked~.tab-content {
-	/* Set the max-height to a large number */
-	/* Or 100% viewport height */
+
 	max-height: 100vh;
+}
+
+.rules {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 220px 100px;
+}
+
+/*------------------------------------------------registration form--------------------------*/
+
+#name {
+
+	display: grid;
+	height: 40px;
+	grid-template-columns: 500px 1fr;
+
+}
+
+.firstname input {
+	width: 57%;
+}
+
+.lastname input {
+	width: 65%;
+}
+
+#street {
+	display: grid;
+	height: 40px;
+	grid-template-rows: 1fr;
+}
+
+.address input {
+	width: 79%;
+}
+
+#citycode {
+
+	display: grid;
+	height: 40px;
+	grid-template-columns: 500px 1fr;
+
+}
+
+.city input {
+	width: 90%;
+}
+
+.code input {
+	width: 68%;
+}
+
+
+#birthgender {
+	display: grid;
+	height: 40px;
+	grid-template-columns: 500px 1fr;
+}
+
+.birth input {
+	width: 70%;
+}
+
+#parent {
+	display: grid;
+	height: 40px;
+	grid-template-rows: 1fr;
+}
+
+.guardian input {
+	width: 77%;
+}
+
+#phonemail {
+
+	display: grid;
+	height: 40px;
+	grid-template-columns: 500px 1fr;
+
+}
+
+.phone input {
+	width: 65%;
+}
+
+.mail input {
+	width: 60%;
+}
+
+/*----------------------------------------------button------------------------*/
+/* .btn {
+	
+	outline: none;
+	border: none;
+	cursor: pointer;
+
+	background-color: rgb(135, 180, 87);
+	font-size: 12px;
+	display: flex;
+	position: relative;
+
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 12px 28px;
+	margin: 10px;
+	border-radius: 20px;
+	box-shadow: 0 6px olive;
+}
+
+.btn:hover {
+	box-shadow: 0 4px #efa424;
+	top: 2px;
+}
+
+.btn:active {
+	box-shadow: none;
+	top: 6px;
+} */
+
+/*-------------------------------------------tablesstyle for gameinfo-------------------------------------*/
+.table1 {
+	display: grid;
+	column-gap: 60px;
+	margin-left: 7%;
+	text-align: center;
+	border: 2px rebeccapurple;
+	padding-bottom: 5%;
+}
+
+.table2 {
+	display: grid;
+	column-gap: 60px;
+	margin-left: 7%;
+	text-align: center;
+}
+
+.maps {
+
+	display: grid;
+	column-gap: 60px;
+
+
+}
+
+/* list style -------------------------------game info---------------*/
+
+ul {
+	list-style-type: square;
+}
+
+.groups {
+	list-style-type: lower-alpha;
+}
+
+.recreation {
+	list-style-type: lower-alpha;
+}
+
+
+
+.coach {
+	list-style-type: circle;
+}
+
+/*-----------Contact------------*/
+.contact {
+	position: relative;
+	justify-content: center;
+
+	color: #fff;
+	text-align: center;
+}
+
+.contact-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 150%;
+	background-size: cover;
+	background-color: #2196f3;
+	z-index: -1;
 }

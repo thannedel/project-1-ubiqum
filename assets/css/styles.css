@@ -372,83 +372,58 @@ header nav li:last-child {
 
 /*------------------------------------------------registration form--------------------------*/
 
-#name {
-
+.container {
 	display: grid;
-	height: 40px;
-	grid-template-columns: 500px 1fr;
-
-}
-
-.firstname input {
-	width: 57%;
-}
-
-.lastname input {
-	width: 65%;
-}
-
-#street {
-	display: grid;
-	height: 40px;
-	grid-template-rows: 1fr;
-}
-
-.address input {
-	width: 79%;
-}
-
-#citycode {
-
-	display: grid;
-	height: 40px;
-	grid-template-columns: 500px 1fr;
-
-}
-
-.city input {
-	width: 90%;
-}
-
-.code input {
-	width: 68%;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	grid-column-gap: 10px;
+	grid-row-gap: 0px;
+	max-width: 960px;
+	margin: 0 auto;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
 }
 
 
-#birthgender {
-	display: grid;
-	height: 40px;
-	grid-template-columns: 500px 1fr;
+
+input[type=text],
+input[type=email],
+input[type=date],
+select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
 }
 
-.birth input {
-	width: 70%;
+table {
+	border-collapse: separate;
+	border-spacing: 50px 0;
 }
 
-#parent {
-	display: grid;
-	height: 40px;
-	grid-template-rows: 1fr;
+td {
+	padding: 10px 0;
 }
 
-.guardian input {
-	width: 77%;
+input[type=submit] {
+	width: 100%;
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
 }
 
-#phonemail {
 
-	display: grid;
-	height: 40px;
-	grid-template-columns: 500px 1fr;
 
-}
-
-.phone input {
-	width: 65%;
-}
-
-.mail input {
-	width: 60%;
+input[type=submit]:hover {
+	background-color: #45a049;
 }
 
 /*----------------------------------------------button------------------------*/

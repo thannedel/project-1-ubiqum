@@ -36,46 +36,47 @@
 
     </section>
     <section class="events">
+        <h3 class="title">Registration Form</h3>
 
         <div class="content">
             <form action="/show_data.html" method="get">
 
                 <div class="container">
 
-                    <div id="name">
-                        <div class="firstname">
-                            Player’s First Name: <input type="text" name="first_name">
-                        </div>
-                        <div class="lastname">
-                            Last Name:<input type="text" name="last_name">
-                        </div>
+
+                    <div class="firstname">
+                        Player’s First Name: <input type="text" name="first_name">
+                    </div>
+                    <div class="lastname">
+                        Last Name:<input type="text" name="last_name">
                     </div>
 
-                    <div id="street">
-                        <div class="address">
-                            Street Address: <input type="text" name="street_adress">
-                        </div>
+
+
+                    <div class="address">
+                        Street Address: <input type="text" name="street_adress">
                     </div>
 
-                    <div id="citycode">
-                        <div class="city">
-                            City:<input type="text" name="city">
-                        </div>
-                        <div class="code">
-                            Zip Code: <input type="text" name="zip">
-                        </div>
-                    </div>
-                    <div id="birthgender">
-                        <div class="birth">
-                            Birth Date: <input type="date" name="date">
-                        </div>
 
-                        <div class="gender">
-                            Gender: <input type="radio" name="gender" value="Female">Female
-                            <input type="radio" name="gender" value="Male">Male
-                        </div>
 
+                    <div class="city">
+                        City:<input type="text" name="city">
                     </div>
+                    <div class="code">
+                        Zip Code: <input type="text" name="zip">
+                    </div>
+
+
+                    <div class="birth">
+                        Birth Date: <input type="date" name="date">
+                    </div>
+
+                    <div class="gender">
+                        Gender: <input type="radio" name="gender" value="Female">Female
+                        <input type="radio" name="gender" value="Male">Male
+                    </div>
+
+
 
 
                     <div class="grande">
@@ -90,14 +91,14 @@
                             Parent/Guardian: <input type="text" name="parent">
                         </div>
                     </div>
-                    <div id="phonemail">
-                        <div class="phone">
-                            Contact Phone:<input type="text" name="phone">
-                        </div>
-                        <div class="mail">
-                            Contact Email:<input type="email" name="mail" required>
-                        </div>
+
+                    <div class="phone">
+                        Contact Phone:<input type="text" name="phone">
                     </div>
+                    <div class="mail">
+                        Contact Email:<input type="email" name="mail" required>
+                    </div>
+
 
 
                 </div>
@@ -183,7 +184,7 @@
                     </tr>
                 </table>
 
-                <h3>Permission to Play</h3>
+                <p><strong>Permission to Play</strong></p>
                 <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by
                     all the
                     rules of the Northside Youth
@@ -211,7 +212,7 @@
 
                 <!-- <input type="submit">-->
 
-                <button class="btn">Submit</button>
+                <input type="submit" value="Submit">
             </form>
         </div>
     </section>

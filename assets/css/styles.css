@@ -292,7 +292,7 @@ header nav li:last-child {
 }
 
 /*---------------------------game info  original template with lists--------------------------------------------*/
-/* ul {
+ul {
 	list-style-type: square;
 }
 
@@ -307,9 +307,18 @@ header nav li:last-child {
 .coach {
 	list-style-type: circle;
 }
- */
+
+.rules {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 220px 100px;
+}
+
+*/
 /*---------------------------------------------------rules with accordion----------------------------------*/
-.tab {
+/* .tab {
 	position: relative;
 	margin: 2px;
 	max-width: 600px;
@@ -368,7 +377,7 @@ header nav li:last-child {
 	align-items: center;
 
 	padding: 220px 100px;
-}
+} */
 
 /*------------------------------------------------registration form--------------------------*/
 
